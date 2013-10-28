@@ -1,6 +1,6 @@
-(defproject mies/lein-template "0.1.0"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject mies/lein-template "0.1.2"
+  :description "A minimal ClojureScript project template"
+  :url "http://github.com/swannodette/mies"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :scm {:name "git"

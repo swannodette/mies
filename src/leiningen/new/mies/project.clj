@@ -13,7 +13,7 @@
     :builds [{:id "{{name}}"
               :source-paths ["src"]
               :compiler {
-                :output-to "{{name}}.js"
+                :output-to "{{sanitized}}.js"
                 :output-dir "out"
                 :optimizations :none
                 :source-map true}}]})
