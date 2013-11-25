@@ -1,4 +1,4 @@
-(defproject mies/lein-template "0.1.6"
+(defproject mies/lein-template "0.1.7"
   :description "A minimal ClojureScript project template"
   :url "http://github.com/swannodette/mies"
   :license {:name "Eclipse Public License"
