@@ -9,4 +9,5 @@
     (->files data
       ["project.clj" (render "project.clj" data)]
       ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
-      ["index.html" (render "index.html" data)])))
+      ["index.html" (render "index.html" data)]
+      [".gitignore" (render "gitignore" data)])))
