@@ -1,3 +1,5 @@
 (ns {{name}}.core)
 
-(. js/console (log "Hello world!"))
+(enable-console-print!)
+
+(println "Hello world!")
