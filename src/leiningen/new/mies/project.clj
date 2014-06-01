@@ -9,7 +9,7 @@
 
   :source-paths ["src"]
 
-  :cljsbuild { 
+  :cljsbuild {
     :builds [{:id "{{name}}"
               :source-paths ["src"]
               :compiler {
