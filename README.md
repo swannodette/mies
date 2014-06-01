@@ -4,8 +4,15 @@ A minimal ClojureScript template.
 
 ## Usage
 
+To create a new project: 
 ```
 lein new mies hello-world
+cd hello-world
+```
+
+To compile clojurescript and get a working web-page:
+```
+lein cljsbuild auto
 ```
 
 ## License
