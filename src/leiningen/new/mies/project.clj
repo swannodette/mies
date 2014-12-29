@@ -7,7 +7,9 @@
 
   :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]]
 
-  :source-paths ["src"]
+  :source-paths ["src" "target/classes"]
+
+  :clean-targets ["out/{{sanitized}}" "{{sanitized}}.js"]
 
   :cljsbuild {
     :builds [{:id "{{name}}"
@@ -16,4 +18,5 @@
                 :output-to "{{sanitized}}.js"
                 :output-dir "out"
                 :optimizations :none
+                :cache-analysis true                
                 :source-map true}}]})
