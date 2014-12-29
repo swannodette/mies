@@ -9,14 +9,20 @@
 
   :source-paths ["src" "target/classes"]
 
-  :clean-targets ["out/{{sanitized}}" "{{sanitized}}.js"]
+  :clean-targets ["out/{{sanitized}}" "{{sanitized}}.js" "{{sanitized}}.min.js"]
 
   :cljsbuild {
-    :builds [{:id "{{name}}"
+    :builds [{:id "dev"
               :source-paths ["src"]
               :compiler {
                 :output-to "{{sanitized}}.js"
                 :output-dir "out"
                 :optimizations :none
                 :cache-analysis true                
-                :source-map true}}]})
+                :source-map true}}
+             {:id "release"
+              :source-paths ["src"]
+              :compiler {
+                :output-to "{{sanitized}}.min.js"
+                :pretty-print false              
+                :optimizations :advanced}}]})

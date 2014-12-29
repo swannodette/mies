@@ -20,15 +20,19 @@ To avoid compiling ClojureScript for each build, AOT Clojurescript locally in yo
     user=> (compile 'cljs.closure)
     user=> (compile 'cljs.core)
 
-Subsequent builds can use:
+Subsequent dev builds can use:
 
-    lein cljsbuild auto
+    lein cljsbuild auto dev
 
 Clean project specific out:
 
-     lein clean
+    lein clean
+     
+Optimized builds:
 
-For more info, read [Waitin'](http://swannodette.github.io/2014/12/22/waitin/).
+    lein cljsbuild once release     
+
+For more info on Cljs compilation, read [Waitin'](http://swannodette.github.io/2014/12/22/waitin/).
 
 ## License
 
