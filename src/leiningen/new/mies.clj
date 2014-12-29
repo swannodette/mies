@@ -10,4 +10,5 @@
       ["project.clj" (render "project.clj" data)]
       ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
       ["index.html" (render "index.html" data)]
+      ["README.md" (render "README.md" data)]
       [".gitignore" (render "gitignore" data)])))
