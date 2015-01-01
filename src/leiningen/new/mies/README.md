@@ -22,7 +22,7 @@ Subsequent dev builds can use:
 
     lein cljsbuild auto dev
 
-To start a Node REPL:
+To start a Node REPL (requires rlwrap):
 
     ./scripts/repl
 
