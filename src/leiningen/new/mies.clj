@@ -11,4 +11,7 @@
       ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
       ["index.html" (render "index.html" data)]
       ["README.md" (render "README.md" data)]
-      [".gitignore" (render "gitignore" data)])))
+      [".gitignore" (render "gitignore" data)]
+      ["scripts/compile_cljsc" (render "compile_cljsc" data) :executable true]
+      ["scripts/repl" (render "repl" data) :executable true]
+      ["scripts/repl.clj" (render "repl.clj" data)])))

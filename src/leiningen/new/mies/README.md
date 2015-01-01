@@ -16,13 +16,15 @@ First-time Clojurescript developers, add the following to your bash .profile:
 
 To avoid compiling ClojureScript for each build, AOT Clojurescript locally in your project with the following:
 
-    lein trampoline run -m clojure.main
-    user=> (compile 'cljs.closure)
-    user=> (compile 'cljs.core)
+    ./scripts/compile_cljsc
 
 Subsequent dev builds can use:
 
     lein cljsbuild auto dev
+
+To start a Node REPL:
+
+    ./scripts/repl
 
 Clean project specific out:
 
