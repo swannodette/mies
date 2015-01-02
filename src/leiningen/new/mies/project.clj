@@ -18,11 +18,11 @@
                 :output-to "{{sanitized}}.js"
                 :output-dir "out"
                 :optimizations :none
-                :cache-analysis true                
+                :cache-analysis true
                 :source-map true}}
              {:id "release"
               :source-paths ["src"]
               :compiler {
                 :output-to "{{sanitized}}.min.js"
-                :pretty-print false              
+                :pretty-print false
                 :optimizations :advanced}}]})
