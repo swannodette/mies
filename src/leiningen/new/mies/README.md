@@ -10,8 +10,7 @@ FIXME: Write a paragraph about the library/project and highlight its goals.
 
 First-time Clojurescript developers, add the following to your bash .profile:
 
-    LEIN_FAST_TRAMPOLINE=y
-    export LEIN_FAST_TRAMPOLINE
+    export LEIN_FAST_TRAMPOLINE=y
     alias cljsbuild="lein trampoline cljsbuild $@"
 
 To avoid compiling ClojureScript for each build, AOT Clojurescript locally in your project with the following:
