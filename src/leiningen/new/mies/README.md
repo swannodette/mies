@@ -25,6 +25,10 @@ To start a Node REPL (requires rlwrap):
 
     ./scripts/repl
 
+To get source map support in the Node REPL:
+
+    lein npm install
+
 Clean project specific out:
 
     lein clean
