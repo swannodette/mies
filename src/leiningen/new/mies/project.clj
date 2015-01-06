@@ -18,7 +18,7 @@
     :builds [{:id "dev"
               :source-paths ["src"]
               :compiler {
-                :output-to "{{sanitized}}.js"
+                :output-to "out/{{sanitized}}.js"
                 :output-dir "out"
                 :optimizations :none
                 :cache-analysis true                
@@ -26,6 +26,8 @@
              {:id "release"
               :source-paths ["src"]
               :compiler {
-                :output-to "{{sanitized}}.min.js"
-                :pretty-print false              
-                :optimizations :advanced}}]})
+                :output-to "out-adv/{{sanitized}}.min.js"
+                :output-dir "out-adv"
+                :optimizations :advanced
+                :cache-analysis true         
+                :pretty-print false}}]})
