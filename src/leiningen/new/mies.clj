@@ -10,6 +10,7 @@
       ["project.clj" (render "project.clj" data)]
       ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
       ["index.html" (render "index.html" data)]
+      ["index_release.html" (render "index_release.html" data)]
       ["README.md" (render "README.md" data)]
       [".gitignore" (render "gitignore" data)]
       ["scripts/compile_cljsc" (render "compile_cljsc" data) :executable true]
