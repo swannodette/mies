@@ -12,7 +12,7 @@
 
   :source-paths ["src" "target/classes"]
 
-  :clean-targets ["out/{{sanitized}}" "{{sanitized}}.js" "{{sanitized}}.min.js"]
+  :clean-targets ["out" "out-adv"]
 
   :cljsbuild {
     :builds [{:id "dev"
