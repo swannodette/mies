@@ -23,7 +23,13 @@ Subsequent dev builds can use:
 
 To start a Node REPL (requires rlwrap):
 
-    ./scripts/repl
+    Uncomment ";; (repl/connect "http://localhost:9000/repl")" in core.cljs in src folder"
+    
+    (command line) ./scripts/repl
+    
+    It should say "waiting for browser to connect"
+    
+    Browse to http://localhost:9000 
 
 To get source map support in the Node REPL:
 
