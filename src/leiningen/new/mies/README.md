@@ -28,6 +28,25 @@ To start a Node REPL (requires rlwrap):
 To get source map support in the Node REPL:
 
     lein npm install
+    
+To start a browser REPL:
+    
+    1. Make sure lein cljsbuild is running in background 
+    2. Uncomment the following line in src/[project name]/core.cljs: 
+       ;; (repl/connect "http://localhost:9000/repl")
+    3. In terminal enter: 
+          lein cljsbuild repl-listen
+          You should see this:
+             Running ClojureScript REPL, listening on port 9000.
+             Compiling client js ...
+             Waiting for browser to connect ...
+             To quit, type: :cljs/quit
+    4. Browse to http://localhost:9000 (you should see Hello World! in web console)
+    5. (back to step 3) you should now see the REPL prompt: ClojureScript:cljs.user> 
+    6. You may now evaluate ClojureScript statements in the browser context. 
+    
+For more info using the browser as REPL environment, see [this](https://github.com/clojure/clojurescript/wiki/The-REPL-and-Evaluation-Environments#browser-as-evaluation-environment).
+    
 
 Clean project specific out:
 
