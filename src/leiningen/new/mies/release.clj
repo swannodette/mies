@@ -6,5 +6,6 @@
   (cljsc/build "src"
     {:output-to "out/{{sanitized}}.js"
      :output-dir "release"
-     :optimizations :advanced})
+     :optimizations :advanced
+     :verbose true})
   (println "... done. Elapsed" (/ (- (System/nanoTime) start) 1e9) "seconds"))
