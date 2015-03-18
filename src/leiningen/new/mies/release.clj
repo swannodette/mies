@@ -4,7 +4,7 @@
 
 (let [start (System/nanoTime)]
   (cljsc/build "src"
-    {:output-to "out/{{sanitized}}.js"
+    {:output-to "release/{{sanitized}}.js"
      :output-dir "release"
      :optimizations :advanced
      :verbose true})

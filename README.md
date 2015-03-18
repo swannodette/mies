@@ -10,14 +10,24 @@ lein new mies hello-world
 cd hello-world
 ```
 
-To compile clojurescript and get a working web-page:
+To compile a developer build version:
 ```
-lein cljsbuild auto
+scripts/build
+```
+
+To continuously monitor source files and build when changed:
+```
+scripts/watch
+```
+
+To compile a release version:
+```
+scripts/release
 ```
 
 ## License
 
-Copyright © 2013 David Nolen
+Copyright © 2013-2015 David Nolen
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
