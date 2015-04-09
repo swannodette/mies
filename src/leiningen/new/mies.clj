@@ -6,7 +6,8 @@
 
 (defn mies [name]
   (let [data {:name name
-              :sanitized (name-to-path name)}]
+              :sanitized (name-to-path name)
+              :cljs-version "0.0-3169"}]
     (->files data
       ["project.clj" (render "project.clj" data)]
       ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]

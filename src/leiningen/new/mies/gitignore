@@ -5,6 +5,7 @@ pom.xml
 /out/
 /release/
 /target/
+.repl-{{cljs-version}}
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
