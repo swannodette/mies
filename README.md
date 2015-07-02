@@ -10,19 +10,24 @@ lein new mies hello-world
 cd hello-world
 ```
 
+To avoid compiling ClojureScript for each build, AOT Clojurescript locally in your project with the following:
+```
+./scripts/compile_cljsc
+```
+
 To compile a developer build version:
 ```
-scripts/build
+lein cljsbuild once dev
 ```
 
 To continuously monitor source files and build when changed:
 ```
-scripts/watch
+lein cljsbuild auto dev
 ```
 
 To compile a release version:
 ```
-scripts/release
+lein cljsbuild once release
 ```
 
 ## License
