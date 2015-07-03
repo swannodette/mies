@@ -5,4 +5,5 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :scm {:name "git"
         :url "https://github.com/swannodette/mies"}
+  :repositories [["clojars" {:sign-releases false}]]
   :eval-in-leiningen true)
