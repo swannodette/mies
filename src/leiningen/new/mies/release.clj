@@ -1,9 +1,9 @@
-(require '[cljs.closure :as cljsc])
+(require '[cljs.build.api :as b])
 
 (println "Building ...")
 
 (let [start (System/nanoTime)]
-  (cljsc/build "src"
+  (b/build "src"
     {:output-to "release/{{sanitized}}.js"
      :output-dir "release"
      :optimizations :advanced

@@ -1,11 +1,14 @@
 (defproject {{name}} "0.1.0-SNAPSHOT"
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-3123"]]
+  :dependencies [[org.clojure/clojure "1.7.0"]
+                 [org.clojure/clojurescript "0.0-3308" :classifier "aot"
+                  :exclusion [org.clojure/tools.reader org.clojure/data.json]]
+                 [org.clojure/tools.reader "0.9.2" :classifier "aot"]
+                 [org.clojure/data.json "0.2.6" :classifier "aot"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
-  :node-dependencies [[source-map-support "0.2.8"]]
-  :plugins [[lein-npm "0.4.0"]]
+  :node-dependencies [[source-map-support "0.3.2"]]
+  :plugins [[lein-npm "0.5.0"]]
   :source-paths ["src" "target/classes"]
   :clean-targets ["out" "release"]
   :target-path "target")

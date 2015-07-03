@@ -8,16 +8,6 @@ FIXME: Write a paragraph about the library/project and highlight its goals.
 
 ## Setup
 
-In your current shell write the following to avoid Leiningen startup
-time:
-
-    export LEIN_FAST_TRAMPOLINE=y
-
-To avoid compiling ClojureScript for each build, AOT Clojurescript
-locally in your project with the following:
-
-    ./scripts/compile_cljsc
-
 To building your project once in dev mode:
 
     ./scripts/build
@@ -36,7 +26,7 @@ To get source map support in the Node REPL:
 
     lein npm install
     
-To start an auto-building browser REPL:
+To start an browser REPL:
     
     1. Uncomment the following line in src/[project name]/core.cljs: 
        ;; (repl/connect "http://localhost:9000/repl")

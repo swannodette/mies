@@ -1,10 +1,13 @@
 (require
+  '[cljs.build.api :as b]
   '[cljs.repl :as repl]
   '[cljs.repl.browser :as browser])
 
-(repl/repl* (browser/repl-env)
-  {:watch "src"
+(b/build "src"
+  {:main '{{name}}.core
+   :output-to "out/{{sanitized}}.js"
    :output-dir "out"
-   :optimizations :none
-   :cache-analysis true                
-   :source-map true})
+   :verbose true})
+
+(repl/repl* (browser/repl-env)
+  {:output-dir "out"})
