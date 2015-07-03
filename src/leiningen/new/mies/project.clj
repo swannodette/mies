@@ -3,8 +3,7 @@
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "0.0-3308" :classifier "aot"
-                  :exclusion [org.clojure/tools.reader org.clojure/data.json]]
-                 [org.clojure/tools.reader "0.9.2" :classifier "aot"]
+                  :exclusion [org.clojure/data.json]]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
   :node-dependencies [[source-map-support "0.3.2"]]
