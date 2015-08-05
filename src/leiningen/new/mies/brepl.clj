@@ -9,5 +9,5 @@
    :output-dir "out"
    :verbose true})
 
-(repl/repl* (browser/repl-env)
-  {:output-dir "out"})
+(repl/repl (browser/repl-env)
+  :output-dir "out")
