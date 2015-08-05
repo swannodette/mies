@@ -6,8 +6,8 @@
                   :exclusion [org.clojure/data.json]]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
-  :node-dependencies [[source-map-support "0.3.2"]]
-  :plugins [[lein-npm "0.5.0"]]
+  :plugins [[lein-npm "0.6.1"]]
+  :npm {:dependencies [[source-map-support "0.3.2"]]}
   :source-paths ["src" "target/classes"]
   :clean-targets ["out" "release"]
   :target-path "target")
