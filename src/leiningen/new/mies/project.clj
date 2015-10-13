@@ -2,7 +2,7 @@
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.122" :classifier "aot"
+                 [org.clojure/clojurescript "1.7.145" :classifier "aot"
                   :exclusion [org.clojure/data.json]]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
