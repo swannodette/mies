@@ -9,6 +9,7 @@ To create a new project:
 lein new mies hello-world
 cd hello-world
 ```
+Most of the following scripts require [rlwrap](http://utopia.knoware.nl/~hlub/uck/rlwrap/) (on OS X installable via brew).
 
 To compile a developer build version:
 ```
