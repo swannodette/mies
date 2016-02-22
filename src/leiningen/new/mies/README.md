@@ -16,7 +16,7 @@ Build your project once in dev mode with the following script and then open `ind
 
 To auto build your project in dev mode:
 
-    ./script/watch
+    ./scripts/watch
 
 To start an auto-building Node REPL:
 
