@@ -2,7 +2,7 @@
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.521"]]
+                 [org.clojure/clojurescript "1.9.562"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
   :plugins [[lein-npm "0.6.2"]]
   :npm {:dependencies [[source-map-support "0.4.0"]]}
